@@ -1,0 +1,17 @@
+h1{
+    color: blue;
+    text-align: center;
+}
+a:link,a:visited {
+    background-color: aqua;
+    color: blanchedalmond;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 100px;
+
+}
+a:hover,a:active{
+    background-color: bisque;
+}

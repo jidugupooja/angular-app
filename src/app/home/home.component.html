@@ -1,0 +1,48 @@
+{{a }}<br>
+{{b}}<br>
+<br>
+{{d}}<br>
+
+<input type="text" [(ngModel)]="name"><br>
+<input type="button" value="print value from text box" (mouseover)="printdata($event)">
+<br>
+constructor : Document.GetElementByID Test;
+<input type="text" id="doctest">
+<span *ngIf="status else condition1">condition is true</span>
+<ng-template #condition1>condition value is false</ng-template>
+
+
+{{mobiles[0]}}<br>
+{{mobiles[1]}}<br>
+{{mobiles[2]}}<br>
+for loop data : <br>
+<div *ngFor="let mobile of mobiles">{{mobiles}}</div>
+upper case :{{name1 | uppercase}}
+<br>
+lower case :{{name2 | lowercase}}
+<br>
+date:{{todaydate}}
+<br>
+short date : {{todaydate | date:'d/m/y'}}
+<br>
+short time : {{todaydate | date:'short time'}}
+<br>
+currency:{{money | currency:'INR'}}
+<br>
+percent : {{performance |percent}}
+<input type="button" (click)="printmyname()">
+<input type="button"value="GET USERS HERE"(click)="getalluserinformation()">
+<table border="1">
+    <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>user name</th>
+        <th>email</th>
+    </tr>
+    <tr *ngFor="let user of user">
+        <td>{{user.id}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.username}}</td>
+        <td>{{user.email}}</td>
+    </tr>
+</table>
